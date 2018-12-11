@@ -1,5 +1,6 @@
 functor
 export
+   
    andg:AndG
    org:OrG
    nandg:NandG
@@ -18,7 +19,7 @@ define
 	 thread {GateLoop Xs Ys} end
       end   
    end
-   
+
    AndG ={GateMaker fun{$ Xs Ys} Xs*Ys end}
    OrG ={GateMaker  fun{$ Xs Ys} Xs+Ys-Xs*Ys end}
    NandG={GateMaker fun{$ Xs Ys} 1-Xs*Ys end}

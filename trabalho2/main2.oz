@@ -18,7 +18,7 @@ define
    L = { Gate.andg {Gate.nandg X X} Z }
    M = { Gate.andg Y Z }
    S = { Gate.org {Gate.org K L} M }
-   {Browse C}
-   {Browse S}
+   {Browser.browse C}
+   {Browser.browse S}
    
 end   
